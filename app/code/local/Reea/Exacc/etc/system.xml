@@ -10,10 +10,10 @@
             <sort_order>11</sort_order>
         </mysecondtab>
     </tabs>
-<!--    <sections>
-        <ftpconfigurationsection translate="label" module="reea_hydraimport">
+    <sections>
+        <firstconfiguration translate="label" module="reea_exacc">
             <class>separator-top</class>
-            <label>FTP Configuration</label>
+            <label>First Configuration</label>
             <tab>mycooltab1</tab>
             <sort_order>10</sort_order>
             <show_in_default>1</show_in_default>
@@ -95,11 +95,11 @@
                     </fields>
                 </ftp_host_config_group>
             </groups>
-        </ftpconfigurationsection>
+        </firstconfiguration>
         
-        <pbcmagmiscriptsection translate="label" module="reea_hydraimport">
+        <secondconfigurationsection translate="label" module="reea_exacc">
             <class>separator-top</class>
-            <label>PbcMagmiScript Configuration</label>
+            <label>Second Configuration Section</label>
             <tab>mycooltab1</tab>
             <sort_order>11</sort_order>
             <show_in_default>1</show_in_default>
@@ -302,9 +302,9 @@
                     </fields>
                 </directoriesgroup>
             </groups>
-        </pbcmagmiscriptsection>
+        </secondconfigurationsection>
         
-         <ExportConfigurationSection translate="label" module="reea_hydraimport">
+         <ExportConfigurationSection translate="label" module="reea_exacc">
             <class>separator-top</class>
             <label>Export Configuration</label>
             <tab>mycooltab1</tab>
@@ -372,7 +372,7 @@
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
-            <groups>
+<!--            <groups>
                 <samplegroup1 translate="label">
                     <label>Sample group 1 label</label>
                     <frontend_type>text</frontend_type>
@@ -489,9 +489,9 @@
                     </fields>
                 </samplegroup5>                             
                 
-                
+                -->
 
-                <samplegroup6 translate="label">
+<!--                <samplegroup6 translate="label">
                     <label>Sample group 6 label (time demo)</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>22</sort_order>
@@ -513,10 +513,10 @@
                     
                         
                     </fields>
-                </samplegroup6>                             
-            </groups>
+                </samplegroup6>                             -->
+            <!--</groups>-->
         </samplesection1>   
   
-    </sections>-->
+    </sections>
     
 </config>

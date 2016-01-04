@@ -1,6 +1,6 @@
 <?php
 
-class Reea_Hydraimport_Model_Config_CustomSelectionOptions extends Mage_Core_Model_Config_Data
+class Reea_Exacc_Model_Config_CustomSelectionOptions extends Mage_Core_Model_Config_Data
 {
     /**
      * Xml config path to value of samplefield1fromgroup1 field from system.xml
