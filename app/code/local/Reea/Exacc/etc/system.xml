@@ -1,0 +1,522 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <mycooltab1 translate="label" module="reea_exacc">
+            <label>REEA Exacc Config </label>
+            <sort_order>10</sort_order>
+        </mycooltab1>
+        <mysecondtab translate="label" module="reea_exacc">
+            <label>REEA Custom Second Tab </label>
+            <sort_order>11</sort_order>
+        </mysecondtab>
+    </tabs>
+<!--    <sections>
+        <ftpconfigurationsection translate="label" module="reea_hydraimport">
+            <class>separator-top</class>
+            <label>FTP Configuration</label>
+            <tab>mycooltab1</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <ftp_host_config_group translate="label">
+                    <label>Ftp Access Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <expanded>1</expanded>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <HostAdressField translate="label">
+                            <label>Hostname / Ip:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enter ftp hostname / adress </comment>
+                        </HostAdressField>
+                        <UsernameField translate="label">
+                            <label>Username:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Your FTP username.</comment>
+                        </UsernameField>
+                        <PasswordField translate="label">
+                            <label>Password:</label>
+                            <frontend_type>password</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Your FTP password.</comment>
+                        </PasswordField>
+                        <FilePath translate="label">
+                            <label>File Path</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment> Filepath - Leave EMPTY if file is inside root directory.</comment>
+                        </FilePath>
+                        <FileName translate="label">
+                            <label>File Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment> FileName - The name of the file Hydra uploads to the ftp.</comment>
+                        </FileName>
+                        <TestFileName translate="label">
+                            <label>TESTING File Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment> TESTING FileName - The name of the TESTING Hydra file on the FTP.</comment>
+                        </TestFileName>
+                        <LocalFilePath translate="label">
+                            <label>Local File Path</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment> LOCAL Filepath - Leave EMPTY if file is inside root directory.</comment>
+                        </LocalFilePath>
+                    </fields>
+                </ftp_host_config_group>
+            </groups>
+        </ftpconfigurationsection>
+        
+        <pbcmagmiscriptsection translate="label" module="reea_hydraimport">
+            <class>separator-top</class>
+            <label>PbcMagmiScript Configuration</label>
+            <tab>mycooltab1</tab>
+            <sort_order>11</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <defaultgroup translate="label">
+                    <expanded>1</expanded>
+                    <label>Default</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <script_verbose translate="label">
+                            <label>script_verbose</label>
+                            <frontend_type>select</frontend_type>
+                            <backend_model>somecooldashmodel2/CustomSelectionBooleanOptions</backend_model>
+                            <source_model>somecooldashmodel2/CustomSelectionBooleanOptions</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>null comment</comment>
+                        </script_verbose>
+                        <days_to_keep_log_files translate="label">
+                            <label>days_to_keep_log_files</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>null comment</comment>
+                            <show_in_website>1</show_in_website>
+                        </days_to_keep_log_files>
+                        <testing_mode translate="label">
+                            <label>testing_mode</label>
+                            <frontend_type>select</frontend_type>
+                            <backend_model>somecooldashmodel2/CustomSelectionBooleanOptions</backend_model>
+                            <source_model>somecooldashmodel2/CustomSelectionBooleanOptions</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>null comment</comment>
+                        </testing_mode>
+                        <override_php_default_limits translate="label">
+                            <label>override_php_default_limits</label>
+                            <frontend_type>select</frontend_type>
+                            <backend_model>somecooldashmodel2/CustomSelectionBooleanOptions</backend_model>
+                            <source_model>somecooldashmodel2/CustomSelectionBooleanOptions</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>null comment</comment>
+                        </override_php_default_limits>
+                        <generate_random_values translate="label">
+                            <label>generate_random_values</label>
+                            <frontend_type>select</frontend_type>
+                            <backend_model>somecooldashmodel2/CustomSelectionBooleanOptions</backend_model>
+                            <source_model>somecooldashmodel2/CustomSelectionBooleanOptions</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>null comment</comment>
+                        </generate_random_values>
+                        <number_to_generate translate="label">
+                            <label>number_to_generate</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>null comment</comment>
+                        </number_to_generate>
+                        <memory_limit translate="label">
+                            <label>memory_limit</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>null comment</comment>
+                        </memory_limit>
+                        <max_execution_time translate="label">
+                            <label>max_execution_time</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>null comment</comment>
+                        </max_execution_time>
+                        <display_errors translate="label">
+                            <label>display_errors</label>
+                            <frontend_type>select</frontend_type>
+                            <backend_model>somecooldashmodel2/CustomSelectionBooleanOptions</backend_model>
+                            <source_model>somecooldashmodel2/CustomSelectionBooleanOptions</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>null comment</comment>
+                        </display_errors>
+                        <outputfile_filename_ext translate="label">
+                            <label>outputfile_filename_ext</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>null comment</comment>
+                        </outputfile_filename_ext>
+                        <masinifile_filename_ext translate="label">
+                            <label>masinifile_filename_ext</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>null comment</comment>
+                        </masinifile_filename_ext>
+                    </fields>
+                </defaultgroup>
+                <directoriesgroup translate="label">
+                    <expanded>1</expanded>
+                    <label>Directories</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <MEDIA_IMPORT_IMAGES_DIR translate="label">
+                            <label>MEDIA IMPORT IMAGES DIR:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enter MEDIA_IMPORT_IMAGES_DIR </comment>
+                        </MEDIA_IMPORT_IMAGES_DIR> 
+                        <MEDIA_IMPORT_DEFAULT_IMAGES_DIR translate="label">
+                            <label>MEDIA_IMPORT_DEFAULT_IMAGES_DIR</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enter MEDIA_IMPORT_DEFAULT_IMAGES_DIR </comment>
+                        </MEDIA_IMPORT_DEFAULT_IMAGES_DIR>
+                        <MAGMI_BASE_URL translate="label">
+                            <label>MAGMI_BASE_URL</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enter MAGMI_BASE_URL </comment>
+                        </MAGMI_BASE_URL>
+                        <MAGENTO_VAR_IMPORT_FOLDER translate="label">
+                            <label>MAGENTO_VAR_IMPORT_FOLDER</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enter MAGENTO_VAR_IMPORT_FOLDER </comment>
+                        </MAGENTO_VAR_IMPORT_FOLDER>
+                        <INPUTS_FOLDER translate="label">
+                            <label>INPUTS_FOLDER</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enter INPUTS_FOLDER </comment>
+                        </INPUTS_FOLDER>
+                        <OUTPUTS_FOLDER translate="label">
+                            <label>OUTPUTS_FOLDER</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enter OUTPUTS_FOLDER </comment>
+                        </OUTPUTS_FOLDER>
+                        <PIESE_MASINI_CSVS translate="label">
+                            <label>PIESE_MASINI_CSVS</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enter PIESE_MASINI_CSVS DIR </comment>
+                        </PIESE_MASINI_CSVS>
+                    </fields>
+                </directoriesgroup>
+            </groups>
+        </pbcmagmiscriptsection>
+        
+         <ExportConfigurationSection translate="label" module="reea_hydraimport">
+            <class>separator-top</class>
+            <label>Export Configuration</label>
+            <tab>mycooltab1</tab>
+            <sort_order>130</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <ExportProfilesConfig translate="label">
+                    <expanded>1</expanded>
+                    <label>Configurare Generala</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                         <pieseautofield translate="label">
+                            <label>Nume Fisier Csv Pieseauto.ro :</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Input the csv filename for the pieseauto.ro :</comment>
+                        </pieseautofield>
+                        <mappingFilePieseauto translate="label">
+                            <label>Nume Si Cale Csv MAPARE Pieseauto.ro :</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Input the csv's path: (if exists)</comment>
+                        </mappingFilePieseauto>
+                        <dezmembrarimasinifield translate="label">
+                            <label>Nume Fisier Csv Dezmembrarimasini.ro :</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Input the csv filename for the dezmembrarimasini.ro :</comment>
+                        </dezmembrarimasinifield>
+                        <mappingFileDezRo translate="label">
+                            <label>Nume Si Cale Csv MAPARE DEZ.ro :</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Input the csv's path: (if exists)</comment>
+                        </mappingFileDezRo>
+                    </fields>
+                </ExportProfilesConfig>     
+            </groups>
+        </ExportConfigurationSection> 
+      
+        
+        <samplesection1 translate="label" module="somecooldashhelper1">
+            <class>separator-top</class>
+            <label>Sample section 1 label</label>
+            <tab>mycooltab1</tab>
+            <sort_order>130</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <samplegroup1 translate="label">
+                    <label>Sample group 1 label</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <samplefield1fromgroup1 translate="label">
+                            <label>Sample group 1 field 1 label</label>
+                            <frontend_type>select</frontend_type>
+                            <backend_model>somecooldashmodel2/CustomSelectionBooleanOptions</backend_model>
+                            <source_model>somecooldashmodel2/CustomSelectionBooleanOptions</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Field comment here, for field 1 from group 1.</comment>
+                        </samplefield1fromgroup1>
+                    </fields>
+                </samplegroup1>
+                <samplegroup2 translate="label">
+                    <label>Sample group 2 label</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <samplefield1fromgroup2 translate="label">
+                            <label>Sample label for field 1 of group 2 here</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Just some field comment here, for field 1 from group 2.</comment>
+                        </samplefield1fromgroup2>
+                    </fields>
+                </samplegroup2>
+                <samplegroup3 translate="label">
+                    <label>Sample group 3 label</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>15</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <samplefield1fromgroup3 translate="label">
+                            <label>Sample group 3 field 1 label</label>
+                            <frontend_type>select</frontend_type>
+                            <backend_model>somecooldashmodel2/CustomMultiSelectionOptions</backend_model>
+                            <source_model>somecooldashmodel2/CustomMultiSelectionOptions</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>multiselect</frontend_type>
+                            <comment>Field comment here, for field 1 from group 1.</comment>
+                        </samplefield1fromgroup3>
+                    </fields>
+                </samplegroup3>
+                
+                
+                <samplegroup4 translate="label">
+                    <label>Sample group 4 label</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <samplefield1fromgroup4 translate="label">
+                            <label>Sample group image type label</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>somecooldashmodel3/HandlePhoto</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">catalog/product/placeholder</upload_dir>
+                            <base_url type="media" scope_info="1">catalog/product/placeholder</base_url>                            
+                            <label>Sample photo upload</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Field comment here, for field 1 from group 4.</comment>
+                        </samplefield1fromgroup4>
+                        
+                    </fields>
+                </samplegroup4>     
+                
+                
+                
+                <samplegroup5 translate="label">
+                    <label>Sample group 5 label (file upload demo)</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>21</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <samplefield1fromgroup5 translate="label">
+                            <label>Sample group file type label</label>
+                            <frontend_type>file</frontend_type>
+                            <backend_model>somecooldashmodel3/HandleFile</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">catalog/product/placeholder</upload_dir>
+                            <base_url type="media" scope_info="1">catalog/product/placeholder</base_url>                            
+                            <label>Sample file upload (check the HandleFile for logic)</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Field comment here, for field 1 from group 5.</comment>
+                        </samplefield1fromgroup5>
+                        
+                    </fields>
+                </samplegroup5>                             
+                
+                
+
+                <samplegroup6 translate="label">
+                    <label>Sample group 6 label (time demo)</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>22</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <samplefield1fromgroup6 translate="label">
+                            <label>Sample group date type label</label>
+                            <frontend_type>time</frontend_type>                            
+                            <label>Sample time</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Field comment here, for field 1 from group 6.</comment>
+                        </samplefield1fromgroup6>
+                        
+                    
+                        
+                    </fields>
+                </samplegroup6>                             
+            </groups>
+        </samplesection1>   
+  
+    </sections>-->
+    
+</config>

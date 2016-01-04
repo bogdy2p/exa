@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <reea_exacc translate="title" module="reea_exacc">
+            <title>Reea Exacc</title>
+            <sort_order>200</sort_order>
+            <action>reea_exacc/adminhtml_index/index</action>
+        </reea_exacc>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <reea_exacc translate="title" module="reea_exacc">
+                        <title>Reea Exacc</title>
+                        <sort_order>200</sort_order>
+                    </reea_exacc>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

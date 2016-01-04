@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Reea_Exacc>
+            <version>0.0.0.1</version>
+        </Reea_Exacc>
+    </modules>
+    <global>
+        
+<!--        <models>
+            <reea_exacc>
+                <class>Reea_Exacc_Model</class>
+                <resourceModel>ftpgrabmodel_resource</resourceModel>
+            </reea_exacc>
+        </models>-->
+                
+        <helpers>
+            <reea_exacc>
+                <class>Reea_Exacc_Helper</class>
+            </reea_exacc>
+        </helpers>
+        <helpers>
+            <somecooldashhelper1>
+                <class>Reea_Exacc_Helper</class>
+            </somecooldashhelper1>
+        </helpers>        
+        <blocks>
+            <somecooldashblock1>
+                <class>Reea_Exacc_Block</class>
+            </somecooldashblock1>
+        </blocks>
+        <models>
+            <somecooldashmodel1>
+                <class>Reea_Exacc_Model</class>
+            </somecooldashmodel1>
+        </models>
+        <models>
+            <somecooldashmodel2>
+                <class>Reea_Exacc_Model_Config</class>
+            </somecooldashmodel2>
+        </models>	
+        <models>
+            <somecooldashmodel3>
+                <class>Reea_Exacc_Model_BackendActions</class>
+            </somecooldashmodel3>
+        </models>
+        <resources>
+            <reea_exacc_setup>
+                <setup>
+                    <module>Reea_Exacc</module>
+                </setup>
+            </reea_exacc_setup>
+        </resources>			
+    </global>
+    
+    <admin>
+        <routers>
+            <reea_exacc>
+                <use>admin</use>
+                <args>
+                    <module>Reea_Exacc</module>
+                    <frontName>reea_exacc</frontName>
+                </args>
+            </reea_exacc>
+        </routers>
+    </admin>
+    <frontend>
+        <routers>
+            <reea_exacc>
+                <use>standard</use>
+                <args>
+                    <module>Reea_Exacc</module>
+                    <frontName>reea_exacc</frontName>
+                </args>
+            </reea_exacc>
+        </routers>
+    </frontend>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <ftpconfigurationsection translate="title" module="reea_exacc">
+                                            <title>Ftp configuration section</title>
+                                            <sort_order>10</sort_order>
+                                        </ftpconfigurationsection>
+                                        <pbcmagmiscriptsection translate="title" module="reea_exacc">
+                                            <title>PbcMagmi Section by PBC</title>
+                                            <sort_order>20</sort_order>
+                                        </pbcmagmiscriptsection>
+                                        <ExportConfigurationSection translate="title" module="reea_exacc">
+                                            <title>Exporters Section Configuration</title>
+                                            <sort_order>30</sort_order>
+                                        </ExportConfigurationSection>
+                                        <samplesection1 translate="title" module="reea_exacc">
+                                            <title>CoolDash Section by Branko</title>
+                                            <sort_order>50</sort_order>
+                                        </samplesection1>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+
+<!--    <default>
+        <ftpconfigurationsection>
+            <ftp_host_config_group>
+                <FileName>hydra.csv</FileName>
+                <TestFileName>testhydra.csv</TestFileName>
+            </ftp_host_config_group>
+        </ftpconfigurationsection>
+        <pbcmagmiscriptsection>
+            <defaultgroup>
+                <script_verbose>true</script_verbose>
+                <days_to_keep_log_files>1</days_to_keep_log_files>
+                <testing_mode>false</testing_mode>
+                <override_php_default_limits>false</override_php_default_limits>
+                <generate_random_values>false</generate_random_values>
+                <number_to_generate>0</number_to_generate>
+                <memory_limit>1024M</memory_limit>
+                <max_execution_time>1800</max_execution_time>
+                <display_errors>1</display_errors>
+                <outputfile_filename_ext>outputfile.csv</outputfile_filename_ext>
+                <masinifile_filename_ext>masinifile.csv</masinifile_filename_ext>
+            </defaultgroup>
+            <directoriesgroup>
+                <MEDIA_IMPORT_IMAGES>media/importimages/</MEDIA_IMPORT_IMAGES>
+                <MEDIA_IMPORT_DEFAULT_IMAGES>default_images/</MEDIA_IMPORT_DEFAULT_IMAGES>
+                <MAGENTO_VAR_IMPORT_FOLDER>tools/import/parse/</MAGENTO_VAR_IMPORT_FOLDER>
+                <INPUTS_FOLDER>logs/inputs_from_ftp/</INPUTS_FOLDER>
+                <OUTPUTS_FOLDER>logs/csv_outputs/</OUTPUTS_FOLDER>
+                <PIESE_MASINI_CSVS>logs/piese_masini/</PIESE_MASINI_CSVS>
+            </directoriesgroup>
+        </pbcmagmiscriptsection>
+        <ExportConfigurationSection>
+            <ExportProfilesConfig>
+                <pieseautofield>csv_pieseautoro.csv</pieseautofield>
+                <mappingFilePieseauto>tools/import/mapareCategoriiPieseauto.csv</mappingFilePieseauto>
+                <dezmembrarimasinifield>csv_dezmembrarimasini.csv</dezmembrarimasinifield>
+                <mappingFileDezRo>tools/import/mapareNumePieseDezRo.csv</mappingFileDezRo>
+            </ExportProfilesConfig>
+        </ExportConfigurationSection>
+    </default>-->
+</config>

@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Reea_Exacc>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Reea_Exacc>
+    </modules>
+</config>
