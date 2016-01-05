@@ -6,14 +6,14 @@ class Reea_Exacc_Model_Config_CustomSelectionBooleanOptions extends Mage_Core_Mo
      * Xml config path to value of samplefield1fromgroup1 field from system.xml
      *
      */
-    const XML_PATH_HYDRAIMPORT_DEFAULTGROUP_VALUES = 'pbcmagmiscriptsection/defaultgroup/script_verbose';
+    const XML_PATH_EXACC_DEFAULTGROUP_VALUES = 'pbcmagmiscriptsection/defaultgroup/script_verbose';
 
     const OPTION1_VALUE = 0;
     const OPTION2_VALUE = 1;
 
     public function getSomeValueFromSystemConfigFile()
     {
-        return Mage::getStoreConfig(self::XML_PATH_HYDRAIMPORT_DEFAULTGROUP_VALUES);
+        return Mage::getStoreConfig(self::XML_PATH_EXACC_DEFAULTGROUP_VALUES);
     }
 
     /**
