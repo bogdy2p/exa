@@ -16,8 +16,15 @@ class Reea_Exacc_Adminhtml_IndexController extends Mage_Adminhtml_Controller_Act
     public function indexAction()
     {
 
+
+        $apicaller = Mage::helper('reea_exacc/apicaller');
+
+        echo $apicaller->testone();
+
+
         echo "<h1>";
         print_r("IT WORKS. !!!!!!!!!!!!!!");
         echo "</h1>";
+
     }
 }

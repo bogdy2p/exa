@@ -10,7 +10,7 @@
         <models>
             <reea_exacc>
                 <class>Reea_Exacc_Model</class>
-                <resourceModel>ftpgrabmodel_resource</resourceModel>
+                <resourceModel>MyCoolDashModel_resource</resourceModel>
             </reea_exacc>
         </models>
                 
@@ -107,6 +107,8 @@
     </adminhtml>
 
 <!--    <default>
+
+//SET DEFAULT VALUES HERE IF NEEDED (Also remove this line)
         <ftpconfigurationsection>
             <ftp_host_config_group>
                 <FileName>hydra.csv</FileName>
