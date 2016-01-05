@@ -85,21 +85,17 @@
                                 <config>
                                     <children>
                                         <firstconfiguration translate="title" module="reea_exacc">
-                                            <title>Ftp configuration section</title>
+                                            <title>First configuration section by PBC</title>
                                             <sort_order>10</sort_order>
                                         </firstconfiguration>
                                         <secondconfigurationsection translate="title" module="reea_exacc">
                                             <title>Second Configuration Section by PBC</title>
                                             <sort_order>20</sort_order>
                                         </secondconfigurationsection>
-                                        <ExportConfigurationSection translate="title" module="reea_exacc">
-                                            <title>Exporters Section Configuration</title>
+                                        <ThirdConfiguratonSection translate="title" module="reea_exacc">
+                                            <title>Third Configuration Section by PBC</title>
                                             <sort_order>30</sort_order>
-                                        </ExportConfigurationSection>
-                                        <samplesection1 translate="title" module="reea_exacc">
-                                            <title>CoolDash Section by Branko</title>
-                                            <sort_order>50</sort_order>
-                                        </samplesection1>
+                                        </ThirdConfiguratonSection>
                                     </children>
                                 </config>
                             </children>
