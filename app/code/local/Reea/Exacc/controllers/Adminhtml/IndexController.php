@@ -19,7 +19,7 @@ class Reea_Exacc_Adminhtml_IndexController extends Mage_Adminhtml_Controller_Act
 
         $apicaller = Mage::helper('reea_exacc/apicaller');
 
-        echo $apicaller->testone();
+        echo $apicaller->getcompletestockinfo();
 
 
         echo "<h1>";
